@@ -2,7 +2,7 @@
 import { getUser } from "@fox/mediacloud-ux-sdk-poc";
 
 //global component import
-//import { Card } from "@fox/mediacloud-ux-styleguide-poc";
+import { Button } from "@fox/mediacloud-ux-styleguide-poc";
 
 import { useState } from "react";
 
@@ -29,7 +29,7 @@ export default function Example(props) {
         height="200px"
       />
       <h1>You are on the react micro front end!</h1>
-      <button onClick={fetchUser}>click here to call the sdk</button>
+      <Button onClick={fetchUser} text={"call sdk"} />
       {user && (
         <>
           <div>
