@@ -11,5 +11,8 @@ module.exports = (webpackConfigEnv, argv) => {
 
   return merge(defaultConfig, {
     externals: ["@fox/mediacloud-ux-sdk-poc"],
+    devServer: {
+      server: "https",
+    },
   });
 };

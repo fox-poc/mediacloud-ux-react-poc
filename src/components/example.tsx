@@ -25,17 +25,19 @@ export default function Example(props) {
       <img
         style={imgStyle}
         src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-        alt="svelte-icon"
+        alt="react-icon"
         height="200px"
       />
-      <h1>You are on the react micro front end!</h1>
-      <Button onClick={fetchUser} text={"call sdk"} />
+      <h1>You are on the react micro front end!!!</h1>
+      <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
+        <Button onClick={fetchUser} text={"call sdk"} />
+      </div>
       {user && (
         <>
           <div>
             <h2>user name: {user.name}</h2>
-            <h2>user age: {user.age}</h2>
             <h2>user job: {user.job}</h2>
+            <h2>user age: {user.age}</h2>
           </div>
         </>
       )}
