@@ -14,10 +14,10 @@ export default function Router(props) {
 
   return (
     <>
-      {route === '/home' && <Example text={'Home'}/>}
-      {route === '/people' && <Example text={'People'}/>}
-      {route === '/replay' && <Example text={'Replay'}/>}
-      {route === '/channels' && <Example text={'Channels'}/>}
+      {route === 'mediacloud-root-config/home' && <Example text={'Home'}/>}
+      {route === 'mediacloud-root-config/people' && <Example text={'People'}/>}
+      {route === 'mediacloud-root-config/replay' && <Example text={'Replay'}/>}
+      {route === 'mediacloud-root-config/channels' && <Example text={'Channels'}/>}
     </>
   );
 }
