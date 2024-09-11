@@ -4,6 +4,7 @@ import singleSpaReact from "single-spa-react";
 import Root from "./root.component";
 
 const RenderApp = (props) => {
+  console.log(props)
   return (
     <React.StrictMode>
       <Root name="@fox-mediacloud-ux-react-poc" />

@@ -1,5 +1,5 @@
-import Example from "./components/example";
+import Router from "./components/router/router";
 
 export default function Root(props) {
-  return <Example />;
+  return <Router />;
 }

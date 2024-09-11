@@ -6,7 +6,7 @@ import { Button } from "@fox/mediacloud-ux-styleguide-poc";
 
 import { useState } from "react";
 
-export default function Example(props) {
+export default function Example({ text }) {
   const imgStyle = {
     display: "block",
     marginLeft: "auto",
@@ -28,8 +28,8 @@ export default function Example(props) {
         alt="react-icon"
         height="200px"
       />
-      <h1>You are on the react micro front end!!!</h1>
-      <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
+      <h1 style={{ color: "#000" }}>You are on the {text} page, in react micro front end.</h1>
+      <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
         <Button onClick={fetchUser} text={"call sdk"} />
       </div>
       {user && (
