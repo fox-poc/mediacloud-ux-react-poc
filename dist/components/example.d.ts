@@ -1,1 +1,3 @@
-export default function Example(props: any): import("react/jsx-runtime").JSX.Element;
+export default function Example({ text }: {
+    text: any;
+}): import("react/jsx-runtime").JSX.Element;
