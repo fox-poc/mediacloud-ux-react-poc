@@ -6,9 +6,23 @@ type User = {
 
 declare module "@fox/mediacloud-ux-sdk-poc" {
   const getUser: () => User;
+  const getRecentlyViewedChannels: () => { title: string; url: string }[];
 }
 
 declare module "@fox/mediacloud-ux-styleguide-poc" {
   const Card: React.FC;
   const Button: React.FC<{ onClick: () => void; text: string }>;
+  const CollectionCards: React.FC<{
+    items: { title: string; url: string }[];
+  }>;
+}
+
+declare module "styled-components";
+
+declare namespace JSX {
+  interface IntrinsicElements {
+    "collection-cards": {
+      items: string;
+    };
+  }
 }

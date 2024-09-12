@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import Example from "../example";
+import Home from "../home/home";
 
 export default function Router(props) {
   const [route, setRoute] = useState(window.location.pathname);
@@ -14,7 +15,7 @@ export default function Router(props) {
 
   return (
     <>
-      {route === '/home' && <Example text={'Home'}/>}
+      {route === '/home' && <Home text={'Home'}/>}
       {route === '/assets' && <Example text={'Assets'}/>}
       {route === '/collections' && <Example text={'Collections'}/>}
       {route === '/replay' && <Example text={'Channels'}/>}
