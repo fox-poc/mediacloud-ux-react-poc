@@ -4,11 +4,6 @@ type User = {
   job: string;
 };
 
-declare module "@fox/mediacloud-ux-sdk-poc" {
-  const getUser: () => User;
-  const getRecentlyViewedChannels: () => { title: string; url: string }[];
-}
-
 declare module "@fox/mediacloud-ux-styleguide-poc" {
   const Card: React.FC;
   const Button: React.FC<{ onClick: () => void; text: string }>;
