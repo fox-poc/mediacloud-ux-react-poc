@@ -15,7 +15,7 @@ export default function Router(props) {
 
   return (
     <>
-      {route === '/home' && <Home text={'Home'}/>}
+      {route === '/home' && <Home/>}
       {route === '/assets' && <Example text={'Assets'}/>}
       {route === '/collections' && <Example text={'Collections'}/>}
       {route === '/replay' && <Example text={'Channels'}/>}

@@ -1,17 +1,14 @@
-import { useEffect, useState } from "react";
-
 import { CollectionCards } from "@fox/mediacloud-ux-styleguide-poc";
 
 import { getRecentlyViewedChannels } from "@fox/mediacloud-ux-sdk-poc";
 
 import {
-  HomePageSectionBody,
   HomePageSectionContainer,
   HomePageSectionHeaderContainer,
   HomePageSectionHeader,
 } from "./home.styles";
 
-export default function Router(props) {
+export default function Router() {
   const channelCards = getRecentlyViewedChannels();
 
   return (

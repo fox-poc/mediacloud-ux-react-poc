@@ -1,14 +1,7 @@
 {
-  "extends": "ts-config-single-spa",
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "declarationDir": "dist",
-    "baseUrl": "./",
-    "paths": {
-      "@fox-mediacloud-ux-sdk/*": ["node_modules/@fox/mediacloud-ux-sdk-poc/src"]
-    }
-  },
-  "files": ["src/fox-mediacloud-ux-react-poc.tsx"],
-  "include": ["src/**/*"],
-  "exclude": ["src/**/*.test*"]
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }

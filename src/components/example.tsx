@@ -6,7 +6,7 @@ import { Button } from "@fox/mediacloud-ux-styleguide-poc";
 
 import { useState } from "react";
 
-export default function Example({ text }) {
+export default function Example({ text }: { text: string }) {
   const imgStyle = {
     display: "block",
     marginLeft: "auto",
