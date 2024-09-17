@@ -7,6 +7,8 @@ import vitePluginReactHMR from "vite-plugin-react-single-spa-hmr";
 /** single-spa entry point which contains references to lifecycles and shared exports */
 const ENTRY_POINT = "src/spa.tsx";
 
+const STANDALONE_ENTRY_POINT = "src/main.tsx";
+
 /** Port for running local server and build previews */
 const PORT = 3003;
 
@@ -22,7 +24,7 @@ const NPM_EXTERNALS: string[] = [];
 const BASE_URL_DEPLOYMENT = `./`;
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command }) => ({
+export default defineConfig(({ command, mode }) => ({
   // the base url is injected into any assets to ensure they're http references in production (not relative paths)
   base: command === "serve" ? "/" : BASE_URL_DEPLOYMENT,
   plugins: [

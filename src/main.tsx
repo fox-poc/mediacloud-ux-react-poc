@@ -1,6 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-// import App from "./App.tsx";
+import App from "./App.tsx";
+
+console.log(window.location.href);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -10,6 +12,11 @@ createRoot(document.getElementById("root")!).render(
     <a href="https://github.com/WJSoftware/vite-plugin-single-spa/discussions/116">
       https://github.com/WJSoftware/vite-plugin-single-spa/discussions/116
     </a>
-    {/* <App /> */}
+    <br></br>
+    <br></br>
+    In order to run this application, open the root config, and copy this import into the import map override for <b>@fox-poc/mediacloud-ux-react-poc</b> 
+    <br></br>
+    <br></br>
+    <a href={`${window.location.href}src/spa.tsx`}>{`${window.location.href}src/spa.tsx`}</a>
   </StrictMode>
 );

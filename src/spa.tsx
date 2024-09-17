@@ -12,8 +12,9 @@ const lc = singleSpaReact({
   },
   // use loadRootComponent attribute, instead of rootComponent, to ensure preamble code is injected into the root component before mounting.
   // see vite.config.ts for details on the preamble.
-  loadRootComponent: async () => {
+  loadRootComponent: async (props) => {
     const { default: App } = await import("./App");
+    console.log(props)
     return App;
   },
 });
