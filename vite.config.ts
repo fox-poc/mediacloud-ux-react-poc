@@ -16,10 +16,10 @@ const PORT = 3003;
 const APPLICATION_EXTERNALS: string[] = [];
 
 /** These are NPM packages, which are imported via the root config import map, in the built environment */
-const NPM_EXTERNALS: string[] = ["react", "react-dom", "styled-components"];
+const NPM_EXTERNALS: string[] = [];
 
 // TODO: replace this with the actual CDN URL
-const BASE_URL_DEPLOYMENT = `http://localhost:${PORT}/`;
+const BASE_URL_DEPLOYMENT = `./`;
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => ({
