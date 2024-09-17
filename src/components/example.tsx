@@ -1,5 +1,5 @@
 //SDK import
-import { getUser } from "@fox-poc/mediacloud-ux-sdk-poc";
+import { getUser, User } from "@fox-poc/mediacloud-ux-sdk-poc";
 
 //global component import
 import { Button } from "@fox-poc/mediacloud-ux-styleguide-poc";
@@ -13,7 +13,7 @@ export default function Example({ text }: { text: string }) {
     marginRight: "auto",
   };
 
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState<User>();
 
   const fetchUser = () => {
     const data = getUser();

@@ -3,22 +3,24 @@ import { useEffect, useState } from "react";
 import Example from "../example";
 import Home from "../home/home";
 
-export default function Router(props) {
+export default function Router() {
   const [route, setRoute] = useState(window.location.pathname);
 
   useEffect(() => {
-    window.addEventListener("popstate", (event) => {
+    window.addEventListener("popstate", () => {
       setRoute(window.location.pathname);
     });
     return () => window.removeEventListener("popstate", () => {});
   }, []);
 
+  const append = window.location.hostname === "fox-poc.github.io" ? "/mediacloud-ux-root-config-poc" : "";
+
   return (
     <>
-      {route === '/home' && <Home/>}
-      {route === '/assets' && <Example text={'Assets'}/>}
-      {route === '/collections' && <Example text={'Collections'}/>}
-      {route === '/replay' && <Example text={'Channels'}/>}
+      {route === `${append}/home` && <Home/>}
+      {route === `${append}/assets` && <Example text={'Assets'}/>}
+      {route === `${append}/collections` && <Example text={'Collections'}/>}
+      {route === `${append}/replay` && <Example text={'Channels'}/>}
     </>
   );
 }

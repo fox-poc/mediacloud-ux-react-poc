@@ -9,7 +9,8 @@
     "build": "tsc -b && vite build",
     "start:build": "vite preview",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "publish": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "@fox-poc/mediacloud-ux-sdk-poc": "^0.1.15",
