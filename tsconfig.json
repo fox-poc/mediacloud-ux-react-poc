@@ -3,5 +3,17 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "target": "ES2018",
+    "module": "es2015",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "moduleResolution": "node",
+    "allowJs": true
+  }
 }
