@@ -1,8 +1,8 @@
 //SDK import
-import { getUser } from "@fox/mediacloud-ux-sdk-poc";
+import { getUser } from "@fox-poc/mediacloud-ux-sdk-poc";
 
 //global component import
-import { Button } from "@fox/mediacloud-ux-styleguide-poc";
+import { Button } from "@fox-poc/mediacloud-ux-styleguide-poc";
 
 import { useState } from "react";
 

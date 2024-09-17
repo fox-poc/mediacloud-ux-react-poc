@@ -1,6 +1,6 @@
-import { CollectionCards } from "@fox/mediacloud-ux-styleguide-poc";
+import { CollectionCards } from "@fox-poc/mediacloud-ux-styleguide-poc";
 
-import { getRecentlyViewedChannels } from "@fox/mediacloud-ux-sdk-poc";
+import { getRecentlyViewedChannels } from "@fox-poc/mediacloud-ux-sdk-poc";
 
 import {
   HomePageSectionContainer,
